@@ -1,0 +1,45 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+      "target": "es5",
+      "lib": [
+        "es2018",
+        "DOM"
+      ],
+     
+      "typeRoots": ["node_modules/@types"],
+      "allowSyntheticDefaultImports": true,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "forceConsistentCasingInFileNames": true,
+      "moduleResolution": "node",
+      "module": "commonjs",
+      "pretty": true,
+      "sourceMap": true,
+      "declaration": true,
+      "outDir": "dist",
+      "allowJs": true,
+      "noEmit": false,
+      "esModuleInterop": true,
+      "resolveJsonModule": true,
+      "importHelpers": true,
+      "baseUrl": "src",
+      "paths": {
+        "@/*": ["*"],
+        "@config/*": ["config/*"],
+        "@controllers/*": ["controllers/*"],
+        "@database": ["database/*"],
+        "@dtos/*": ["dtos/*"],
+        "@entities/*": ["entities/*"],
+        "@exceptions/*": ["exceptions/*"],
+        "@interfaces/*": ["interfaces/*"],
+        "@middleware/*": ["middleware/*"],
+        "@routes/*": ["routes/*"],
+        "@services/*": ["services/*"],
+        "@utils/*": ["utils/*"]
+      }
+    },
+    "include": ["src/**/*.ts", "src/**/*.json", ".env"],
+    "exclude": ["node_modules", "src/http", "src/logs"]
+  }
+  
