@@ -6,9 +6,9 @@ Method - Post
 URL - http://localhost:3010/createDBTable
 payload:
 {
-    "dbName": "eSense1",
-    "tableName": "user1",
-    "schemaName":"testSchema",
+    "dbName": "eSense1", //database name to be created
+    "tableName": "user1", //table name to be created
+    "schemaName":"testSchema", //schema name to be created
     "columnTypes": [
         {
             "columnName": "userID",
@@ -39,4 +39,4 @@ payload:
             "precision":""
         }
     ]
-}
+} //Columns for the tables.
